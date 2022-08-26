@@ -30,26 +30,4 @@ func Start(serverAddr *string) (Client, error) {
 
 	return client, nil
 
-	// client := pb.NewRioClient(conn)
-
-	// fmt.Printf("%v\n", client)
-
-	// client.SetGPIObyOffset(context.Background(), &pb.GPIOselected{GPIOLineOffset: 5, GPIOLineValue: 0})
-
-	// stream, err := client.GetGPIOList(context.Background(), &pb.ClientRequest{RequestString: ""})
-	// if err != nil {
-	// 	return err
-	// }
-
-	// for {
-	// 	feature, err := stream.Recv()
-	// 	if err != io.EOF {
-	// 		break
-	// 	}
-	// 	if err != nil {
-	// 		log.Fatalf("%v.GetGPIOList %v", client, err)
-	// 	}
-	// 	log.Println(feature)
-	// }
-
 }
